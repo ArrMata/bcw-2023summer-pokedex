@@ -39,36 +39,30 @@
   </header>
 
   <!-- SECTION -->
-  <main>
-
-    <section id="auth-template">
-      <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
-      <div class="container-fluid">
-        <div class="row my-3">
-          <div class="col-lg-5" id="auth-settings">
-            <div class="card p-2 skeleton-loader">
-              <div class="card-title p-2">
-                <div class="d-flex align-items-center">
-                  <div class="skeleton-loader avatar"></div>
-                  <div class="skeleton-loader text mx-2"></div>
-                </div>
-              </div>
-              <div class="card-body border-top">
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <main class="container-fluid">
     <section id="router-view">
-      <!-- primary viewport -->
+      <section class="row">
+        <div class="col-12 py-2 d-flex pokemon-header justify-content-center">
+          <h1 class="header-title">Pokemans</h1>
+          <button class="pokemon-button" onclick="app.SandboxPokemonController.getMyPokemon()">My Pokemans</button>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-7 m-auto">
+          <section class="row">
+            <div class="col-7 py-3 px-5">
+              <section id="activePokemon" class="row">
+
+              </section>
+            </div>
+            <div id="pokemonList" class="col-5">
+            </div>
+          </section>
+        </div>
+      </section>
+
     </section>
-
-
   </main>
 
   <!-- SECTION -->
